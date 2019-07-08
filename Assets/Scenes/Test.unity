@@ -453,7 +453,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630202201}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -591,9 +591,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: "using UnityEngine;  public class MyClass { \tpublic static void MyMethod()
-    { \t\tvar r = GameObject.FindObjectOfType<MeshRenderer>(); \t\tr.material.color
-    = Color.red; \t} }"
+  m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 3
   m_ReadOnly: 0
@@ -786,9 +784,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "using UnityEngine;  public class MyClass { \tpublic static void MyMethod()
-    { \t\tvar r = GameObject.FindObjectOfType<MeshRenderer>(); \t\tr.material.color
-    = Color.red; \t} }"
+  m_Text: 
 --- !u!222 &1189434268
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -826,6 +822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1353881654}
   - component: {fileID: 1353881653}
+  - component: {fileID: 1353881655}
   m_Layer: 0
   m_Name: Test
   m_TagString: Untagged
@@ -860,6 +857,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353881655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353881652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125752a0ff02249dbae992f45614b108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 923131889}
+  defaultInput: "using UnityEngine;\n\npublic class MyClass {\n\tpublic static void
+    MyMethod() {\n\t\tvar col = new Color(Random.value, Random.value, Random.value);\n\t\tvar
+    r = GameObject.FindObjectOfType<MeshRenderer>();\n\t\tr.material.color = col;\n\t}\n}"
 --- !u!1 &1399980628
 GameObject:
   m_ObjectHideFlags: 0
